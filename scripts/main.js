@@ -73,20 +73,37 @@ const departments = {
 
 console.log(departments);
 
-// opdracht 1a: Log het aantal medewerkers van de sales-afdeling in de console, in het volgende format: "De afdeling Sales heeft [x] medewerkers"
-console.log("De afdeling Sales heeft " + departments.sales.numberOfEmployees + " medewerkers")
+console.log("De afdeling Sales heeft " + departments.sales.numberOfEmployees + " medewerkers");
 
-// opdracht 1b: Log de afdeling-beschrijving van de marketingafdeling in de console, in het volgende format: " Marketing is een leuke afdeling om te werken. [beschrijving]."
-console.log("Marketing is een leuke afdeling om te werken. " + departments.marketing.description)
 
-/*
-    opdracht 1c: Log het aantal medewerkers van de customer-service-afdeling in de console, in het volgende format: "De afdeling Customer Service heeft [aantal] medewerkers"
-    Let op: er is iets raars aan de hand met deze property! */
+console.log("Marketing is een leuke afdeling om te werken. " + departments.marketing.description);
+
+
 console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers");
 
+
+console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + departments.sales.jobs[1].description);
+
 /*
-    opdracht 1d: Log de beschrijving van de functie "Verkoopmanager" in de console, in het volgende format:
-    "Sales is een uitdagende afdeling om te werken als Verkoopmanager. [beschrijving functie Verkoopmanager]"
+const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer service]');
+console.log(userInput);
+
+if (userInput === "marketing"){
+    console.log("Je koos " + userInput + ". " + departments.marketing.description);
+}
+
+else  if (userInput === "sales"){
+    console.log("Je koos " + userInput + ". " + departments.sales.description);
+}
+
+else  if (userInput === "customer service"){
+    console.log("Je koos " + userInput + ". " + departments["customer-service"].description);
+}
+
+else{
+    console.error("ongeldige keuze");
+}
 */
-console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + departments.sales.jobs[1].description)
+
+
 
